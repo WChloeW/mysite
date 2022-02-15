@@ -32,7 +32,7 @@ def register_view(request):
     u = request.POST.get("users", '')
     p = request.POST.get("pwd", '')
     if u and p:
-        stu = PollsStudentinfo(stu_name=u, stu_psw=p, stu_id=str(random.randrange(1111, 9999)))
+        stu = PollsStudentinfo(stu_name=u, stu_psw=p, stu_id=str(random.randrange(0, 1000)))
         stu.save()
         return HttpResponse('register success')
     else:
