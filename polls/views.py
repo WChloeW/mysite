@@ -42,3 +42,7 @@ def register_view(request):
 # click register
 def toregister_view(request):
     return render(request, 'register.html')
+
+
+def me_view(request):
+    return render(request, 'me.html')
